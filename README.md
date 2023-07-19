@@ -42,11 +42,11 @@ To use this project follow the next steps:
 git clone https://github.com/AdrianJPT/Netbox-Zabbix-Integration_TEST_SERENITY.git
 cd Netbox-Zabbix-Integration_TEST_SERENITY
 ```
-* Credentials.java:
+* Change the parameters in _src/test/java/Api_Netbox_Zabbix_Integration/Credentials.java_
 ```bash
 vim src/test/java/Api_Netbox_Zabbix_Integration/Credentials.java
 ```
-* Change the parameters in _src/test/java/Api_Netbox_Zabbix_Integration/Credentials.java_
+* Credentials.java:
 ```bash
 package Api_Netbox_Zabbix_Integration.Manage;
 
