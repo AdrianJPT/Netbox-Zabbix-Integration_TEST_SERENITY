@@ -66,7 +66,7 @@ public class DeleteDeviceStepDef {
     public void i_have_devices_in_netbox_and_zabbix(String DeviceName) {
 
         netboxDevice.openURLdevice();
-        netboxDeviceConfig.createNetboxDevice(DeviceName,"device_role","Device Type", "SITIO-01","Template_Adrian");
+        netboxDeviceConfig.createNetboxDevice(DeviceName,"device_role","Device Type", "SITIO-01","Windows Server 2019");
     }
 
     @When("I delete the device {string}")
@@ -90,7 +90,7 @@ public class DeleteDeviceStepDef {
     public void i_have_devices_in_netbox_and_zabbix(Integer iteration) {
         netboxDevice.openURLdevice();
 
-        netboxDeviceConfig.createNetboxDevice("Delete_Clone_1","device_role","Device Type", "SITIO-01","Template_Adrian");
+        netboxDeviceConfig.createNetboxDevice("Delete_Clone_1","device_role","Device Type", "SITIO-01","Windows Server 2019");
 
         netboxDevice.cloneNetboxDevice("Delete_Clone_1",iteration);
     }

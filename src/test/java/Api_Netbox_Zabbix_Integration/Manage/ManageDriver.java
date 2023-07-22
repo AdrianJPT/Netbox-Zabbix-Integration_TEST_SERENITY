@@ -4,6 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -80,10 +81,11 @@ public class ManageDriver extends PageObject {
     public void changeTab(WebDriver get_driver ,String TAB){
         //change TAB
         get_driver.switchTo().window(TAB);
-
-
-
     }
 
+    public void mouseOverElement(WebElement myElement) {
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(myElement).build().perform();
+    }
 
 }

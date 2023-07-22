@@ -18,9 +18,9 @@ Feature: Create NETBOX to ZABBIX
 
 
     Examples:
-      | DeviceName     | DeviceRole     | DeviceType    | ZabbixTemplate      | ZabbixHostGroup |
-      | "E01_Test-01"  | "device_role"  | "Device Type" | "Template_Adrian"   | "SITIO-01"      |
-      | "E01_Test-02"  | "device_role"  | "Device Type" | "Template_Adrian"   | "SITIO-01"      |
+      | DeviceName     | DeviceRole     | DeviceType    | ZabbixTemplate          | ZabbixHostGroup |
+      | "E01_Test-01"  | "device_role"  | "Device Type" | "Windows Server 2019"   | "SITIO-01"      |
+      | "E01_Test-02"  | "device_role"  | "Device Type" | "Windows Server 2019"   | "SITIO-01"      |
 
 
   Scenario Outline: Create Device with NO platform
@@ -58,7 +58,7 @@ Feature: Create NETBOX to ZABBIX
 
 
     Examples:
-      | DeviceName     | DeviceRole     | DeviceType    | ZabbixTemplate      | ZabbixHostGroup |
-      | "E03_Test-01"  | "device_role"  | "Device Type" | "Template_Adrian"   | "SITIO-02"      |
-      | "E03_Test-02"  | "device_role"  | "Device Type" | "Template_Adrian"   | "SITIO-02"      |
+      | DeviceName    | DeviceRole    | DeviceType    | ZabbixTemplate          | ZabbixHostGroup |
+      | "E03_Test-01" | "device_role" | "Device Type" | "Windows Server 2019"   | "SITIO-02"      |
+      | "E03_Test-02" | "device_role" | "Device Type" | "Windows Server 2019"   | "SITIO-02"      |
 
