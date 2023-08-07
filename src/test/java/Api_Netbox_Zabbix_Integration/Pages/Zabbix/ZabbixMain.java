@@ -11,6 +11,7 @@ public class ZabbixMain {
     @Step
     public void clickOnBarHost() {
         manageDriver.mouseOverElement(zabbixMainPOM.barDataColletion);
+        zabbixMainPOM.barDataColletion.click();
         zabbixMainPOM.barHosts.click();
     }
 
